@@ -1,4 +1,5 @@
 const torres = document.querySelectorAll('.torre');
+const listaMovimentos = document.getElementById('#lista-movimentos')
 
 let torreSelecionada = null;
 let blocoSelecionado = null;
@@ -45,8 +46,7 @@ torres.forEach(torre => {
 
                 torreSelecionada.classList.remove('subindo');
                 torreSelecionada = null;
-            }, 50)
-            
+            }, 50)   
         }
     })
 })
