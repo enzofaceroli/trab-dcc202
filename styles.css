@@ -110,7 +110,7 @@ h1 {
     padding: 2rem;
 }
 
-.tela-inicial {
+#tela-inicial {
     /* display: none; */
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@ h1 {
     cursor: pointer;
 }
 
-.tela-jogo {
+#tela-jogo {
     align-self: flex-end;
     width: 100%;
     /* display: flex; */

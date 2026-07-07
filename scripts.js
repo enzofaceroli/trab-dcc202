@@ -1,3 +1,12 @@
+const botaoJogar = document.getElementById('btn-jogar')
+const telaInicial = document.getElementById('tela-inicial')
+const telaJogo = document.getElementById('tela-jogo')
+
+botaoJogar.onclick = function() {
+    telaInicial.style.display = 'none';
+    telaJogo.style.display = 'flex';
+}
+
 const torres = document.querySelectorAll('.torre');
 const listaMovimentos = document.getElementById('lista-movimentos')
 
@@ -57,9 +66,10 @@ torres.forEach(torre => {
 function confereVitoria() {
     const torreAlvo = torres[2];
     if (torreAlvo.children.length != 8) {
-        return false;
+        const a = 0;
     } else {
-        return true;
+        telaJogo.style.display = 'none';
+        telaInicial.style.display = 'flex';
     }   
 }   
 
